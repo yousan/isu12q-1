@@ -63,3 +63,4 @@ docker:!::isucon
 isucon:!::
 mysql:!::
 redis:!::
+plocate:!::

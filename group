@@ -64,3 +64,4 @@ isucon:x:1001:
 mysql:x:123:
 redis:x:124:
 plocate:x:125:
+ssl-cert:x:126:
