@@ -62,3 +62,4 @@ ubuntu:!::
 docker:!::isucon
 isucon:!::
 mysql:!::
+redis:!::
