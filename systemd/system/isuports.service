@@ -3,13 +3,13 @@ Description = isuports
 # After=network.target
 
 [Install]
-# WantedBy=multi-user.target
+WantedBy=multi-user.target
 
 [Service]
 Type=simple
 User=isucon
 Group=isucon
 WorkingDirectory=/home/isucon/webapp/go
-EnvironmentFile=/opt/bench/env
-ExecStart=isuports
+EnvironmentFile=/etc/env
+ExecStart=/home/isucon/webapp/go/isuports
 Restart=always
