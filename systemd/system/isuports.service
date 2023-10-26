@@ -6,10 +6,11 @@ After=network.target
 WantedBy=multi-user.target
 
 [Service]
+EnvironmentFile=/etc/env
 Type=simple
 User=isucon
 Group=isucon
-WorkingDirectory=/home/isucon/webapp
-ExecStart=docker compose -f docker-compose-go.yml up --build
-ExecStop=docker compose -f docker-compose-go.yml down
+WorkingDirectory=/home/isucon/webapp/go
+ExecStart=/home/isucon/webapp/go/isuports
+ExecStop=killall isuports
 Restart=always
