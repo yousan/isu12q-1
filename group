@@ -2,7 +2,7 @@ root:x:0:
 daemon:x:1:
 bin:x:2:
 sys:x:3:
-adm:x:4:syslog,ubuntu
+adm:x:4:syslog,ubuntu,isucon
 tty:x:5:
 disk:x:6:
 lp:x:7:
@@ -61,6 +61,6 @@ _chrony:x:121:
 ubuntu:x:1000:
 docker:x:122:isucon
 isucon:x:1001:
-mysql:x:123:
+mysql:x:123:isucon
 redis:x:124:
 plocate:x:125:
