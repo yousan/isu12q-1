@@ -6,7 +6,7 @@ After=network.target
 WantedBy=multi-user.target
 
 [Service]
-EnvironmentFile=/etc/env
+EnvironmentFile=-/etc/env
 Type=simple
 User=isucon
 Group=isucon
